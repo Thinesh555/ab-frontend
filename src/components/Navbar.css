@@ -1,0 +1,87 @@
+/* src/components/Navbar.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333; /* Dark background for the navbar */
+  padding: 1rem 2rem;
+  position: sticky; /* Sticky navbar */
+  top: 0; /* Sticks to the top */
+  z-index: 1000; /* Ensures navbar is above other content */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.navbar h1 {
+  color: #fff;
+  margin: 0;
+  font-size: 2.8rem;
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.navbar h1:hover {
+  color: #ff6347; /* Change color on hover */
+}
+
+.links {
+  display: flex;
+  gap: 1.5rem; /* Space between links */
+}
+
+.links a {
+  color: #fff;
+  text-decoration: none; /* Remove underline */
+  font-size: 1.1rem;
+  font-weight: 500;
+  position: relative; /* Position for pseudo-elements */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.links a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #ff6347; /* Underline color */
+  transition: width 0.3s ease; /* Smooth expand effect */
+  position: absolute;
+  bottom: -5px; /* Position below the text */
+  left: 0;
+}
+
+.links a:hover::after {
+  width: 100%; /* Expand underline */
+}
+
+.links a:hover {
+  color: #ff6347; /* Change link color on hover */
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the left */
+    padding: 1rem;
+  }
+
+  .links {
+    flex-direction: column; /* Stack links vertically */
+    width: 100%;
+    gap: 1rem; /* Space between links */
+  }
+
+  .links a {
+    font-size: 1.2rem; /* Increase font size */
+  }
+}
+
+

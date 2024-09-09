@@ -1,0 +1,58 @@
+/* src/components/AdminDashboard.css */
+.admin-dashboard {
+    padding: 20px;
+    background-color: #f4f4f4; /* Light gray background for the dashboard */
+    min-height: 100vh; /* Ensure the dashboard takes full viewport height */
+  }
+  
+  .admin-header {
+    background-color: #333; /* Dark background for the header */
+    color: white; /* White text color */
+    padding: 20px;
+    border-radius: 5px; /* Rounded corners for the header */
+    margin-bottom: 20px; /* Space below the header */
+  }
+  
+  .admin-header h2 {
+    margin: 0;
+    font-size: 28px; /* Larger font size for the title */
+  }
+  
+  .admin-header p {
+    margin: 5px 0 0; /* Margin for the description text */
+    font-size: 18px; /* Font size for the description */
+  }
+  
+  .admin-nav {
+    background-color: white; /* White background for the navigation */
+    border: 1px solid #ddd; /* Light border around the navigation */
+    border-radius: 5px; /* Rounded corners for the navigation */
+    padding: 20px; /* Padding inside the navigation */
+  }
+  
+  .admin-nav ul {
+    list-style-type: none; /* Remove bullet points from the list */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .admin-nav li {
+    margin-bottom: 15px; /* Space between list items */
+  }
+  
+  .admin-link {
+    color: #007bff; /* Blue color for the links */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 18px; /* Font size for links */
+    font-weight: bold; /* Bold text for links */
+  }
+  
+  .admin-link:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  .admin-link.active {
+    color: #0056b3; /* Darker blue for active links */
+    border-bottom: 2px solid #0056b3; /* Underline for active link */
+  }
+  

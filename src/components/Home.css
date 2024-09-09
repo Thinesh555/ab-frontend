@@ -1,0 +1,50 @@
+/* Image Gallery Section */
+.image-gallery {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f8f8f8; /* Light background for the gallery section */
+    background-image: url('C:\Users\ADMIN\Documents\CIS6003\abc-restaurant\bg.jpg');
+    background-size: cover; /* or contain, depending on your preference */
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .image-gallery h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px; /* Space below the heading */
+  }
+  
+  .gallery-container {
+    display: flex;
+    justify-content: center; /* Center the gallery items */
+    flex-wrap: wrap; /* Allow wrapping of images on smaller screens */
+    gap: 20px; /* Space between gallery items */
+  }
+  
+  .gallery-item {
+    width: 300px; /* Fixed width for each image item */
+    height: 200px; /* Fixed height for each image item */
+    overflow: hidden; /* Hide overflow */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    transition: transform 0.3s; /* Smooth scaling effect */
+  }
+  
+  .gallery-item img {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Maintain aspect ratio while covering the container */
+  }
+  
+  .gallery-item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  /* Responsive Media Query */
+  @media (max-width: 768px) {
+    .gallery-container {
+      gap: 10px; /* Reduce gap on smaller screens */
+    }
+  }
+  
